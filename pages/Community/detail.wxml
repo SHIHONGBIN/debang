@@ -1,0 +1,149 @@
+<view class='says-detail'>
+  <view class='search'>
+    <view class='container-fluid'>
+      <view class='col-xs-12'>
+        <view class='col-xs-7'>
+          <!-- <input type='text' placeholder='请输入搜索内容' /> -->
+          <navigator>
+            <button>
+              <image class='img-search' src='/pages/images/icon-search.png'></image>
+            </button>
+          </navigator>
+        </view>
+
+        <view class='col-xs-5 text-right'>
+          <navigator class='navigator-center'>
+            <image class='avt-big' src='/pages/images/avt-big.png'></image>
+          </navigator>
+          <navigator class='navi-go-to'>
+            <image class='icon-point' src='/pages/images/icon-point.png'></image>
+            <text>305</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='says-banner'>
+    <image src='/pages/images/say-banner.jpg'></image>
+  </view>
+
+  <view class='film-intro'>
+    <view class='container-fluid'>
+      <view class='film-bac'>
+        <view class='col-xs-4'>
+          <image src='/pages/images/avt-big.png'></image>
+        </view>
+        <view class='col-xs-8'>
+          <view class='name'>陈丹青</view>
+          <text class='host'>著名影评人</text>
+          <view class='name-intro'>陈丹青，男，祖籍广东台山市三合 镇良村，1953年生于中华人民共和 国上海，毕业于中央美术学院。艺 术家、作家</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='Big-topic-all'>
+
+    <view class='Big-topic'>
+      <view class='container-fluid'>
+        <view class='dk-title'>大咖话题</view>
+        <view class='big-topic-con'>借由陈丹青的眼，陈丹青的语言，陈丹青的洞审美，从 中西方名画名作的一个个微细的局部切入，讲述作品背 后的人文、思想、社会。全片在陈丹青的画室拍摄，后 期辅以大量的动画效果，通过年轻人感兴趣的话题、故 事穿插引导，借以拓宽年轻人的思想。</view>
+      </view>
+    </view>
+   
+
+    <view class='Big-topic Big-replay-list'>
+      <view class='container-fluid'>
+        <view class='dk-title'>大咖答</view>
+
+        <view class='row big-row-con' wx:for='{{dakaAnswer}}' wx:key=''>
+          <view class='col-xs-12'>
+            <view class='col-xs-2'>
+              <image class='avt-small' src='{{item.userheader}}'></image>
+            </view>
+            <view class='col-xs-10'>
+              <view class='avt-small-con'>
+                <view class='avt-name'>{{item.name}}
+                  <text>{{item.time}}</text>
+                </view>
+                <view class='avt-con'>{{item.title}}</view>
+              </view>
+
+              <view class='avt-repply' wx:for='{{item.replay}}' wx:for-index="idx" wx:for-item='ite'>
+                <view class='repply-name'>{{ite.name}}
+                  <image src='{{ite.image}}'></image>
+                </view>
+                <view class='repply-con'>
+                  {{ite.content}}
+                </view>
+                <view class='row'>
+                  <view class='col-xs-4 {{ite.isclick?"current":""}}' bindtap='clickSubZan' data-parentId='{{index}}' data-subId='{{idx}}'>
+                    <block wx:if='{{!ite.isclick}}'>
+                      <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+                    </block>
+                    <block wx:else>
+                      <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+                    </block>
+                    <text>{{ite.zanNum}}</text>
+                  </view>
+                  <view class='col-xs-4' bindtap="bindButtonTap" data-patentid='{{item.id}}' data-childid='{{ite.id}}'>
+                    <image class='icon-pl' src='/pages/images/icon-msg-3.png'></image>
+                    <text>{{ite.answerNum}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<slideNav></slideNav>
+
+<view class='Big-topic-all big-fixed'  wx:if='{{!focus}}'>
+ <view class='row'>
+      <view class='col-xs-4 {{dakaDialog.isclick?"current":""}}' bindtap='clickZan'>
+        <block wx:if='{{!dakaDialog.isclick}}'>
+          <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+        </block>
+        <block wx:else>
+          <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+        </block>
+        <text>{{dakaDialog.zanNum}}</text>
+      </view>
+      <view class='col-xs-4' bindtap="bindButtonTap" data-patentid=''>
+        <image class='icon-pl' src='/pages/images/icon-msg-3.png'></image>
+        <text>评论</text>
+      </view>
+      <view class='col-xs-4'>
+        <image class='icon-zf' src='/pages/images/icon-fow.png'></image>
+        <text>转发</text>
+      </view>
+    </view>
+</view>
+<!-- //调用组件textarea -->
+<!-- 大咖评论 -->
+<textarea pro-a='{{focus}}' wx:if='{{focus}}' bindmyevent="confirmInput" bindmyevent2='defaultInput'></textarea>
+
+
+
+
+<!-- 蒙层 -->
+<view class='layer' style='display:none'></view>
+
+<!-- 上面的评论弹窗 -->
+<view class='Write-comments' style='display:none'>
+  <view class='container-fluid'>
+    <textarea placeholder='写评论:'></textarea>
+  </view>
+</view>
+
+
+<!-- 下面的评论弹窗 -->
+<view class='Answer' style='display:none;'>
+  <view class='container-fluid'>回复提问者</view>
+</view>

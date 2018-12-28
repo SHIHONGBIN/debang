@@ -1,0 +1,51 @@
+<view class='creat-account'>
+  <view class='container-fluid'>
+    <view class='account-logo'>
+      <image src='/pages/images/icon-logo.png'></image>
+      <view>创建您的助手账号</view>
+    </view>
+    <view class='view-trips'>
+      <text>我们需要验证你的号码以继续操作。</text>
+      <text>会有一条一次性的验证码发送到您手机</text>
+    </view>
+
+    <view class='form-input'>
+      <view class="section" style='border:1px solid #d6d6d6;'>
+        <input type='number' placeholder="输入手机号码" bindinput='textinput' name='phoneNumber' data-name='phoneNumber' />
+        <button class='get-code' bindtap='verficodeFn'>{{yzmTips}}</button>
+      </view>
+      <view class="section" style='border:1px solid #d6d6d6;'>
+        <input type='text' placeholder="输入验证码" bindinput='textinput' name='vcode' data-name='vcode' />
+      </view>
+      <view class="section" style='border:1px solid #d6d6d6;'>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker"> {{array[index]}} </view>
+        </picker>
+        <image class='icon-bottom' src='/pages/images/icon-bottom.png'></image>
+      </view>
+      <view class="section" style='border:1px solid #d6d6d6;'>
+        <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+          <view class="picker"> {{array1[index1]}} </view>
+        </picker>
+        <image class='icon-bottom' src='/pages/images/icon-bottom.png'></image>
+      </view>
+
+      <button class='btn-register' bindtap='submit' disabled='{{!config.phoneNumber || !config.vcode || !config.name1 || !config.name2}}'>注册</button>
+    </view>
+  </view>
+</view>
+
+<view class='layer {{isSuccess?"":"isregSuccess"}}' ></view>
+
+<!-- 注册成功弹窗 -->
+<view class='register-success-modal {{isSuccess?"":"isregSuccess"}}'>
+  <view class='title'>
+    <text>注册成功</text>
+    <navigator>前往设置完善个人信息</navigator>
+  </view>
+  <view class='points'>
+    <image src='/pages/images/icon-success.png'></image>
+    <text>+50积分</text>
+  </view>
+  <button class='btn-confirm'>确定</button>
+</view>

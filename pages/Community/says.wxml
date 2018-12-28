@@ -1,0 +1,180 @@
+<view class='news-page says-page'>
+  <view class='says-detail'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-12'>
+          <view class='col-xs-7'>
+            <!-- <input type='text' placeholder='请输入搜索内容' /> -->
+            <navigator>
+              <button>
+                <image class='img-search' src='/pages/images/icon-search.png'></image>
+              </button>
+            </navigator>
+          </view>
+
+          <view class='col-xs-5 text-right'>
+            <navigator class='navigator-center'>
+              <image class='icon-sl' src='/pages/images/icon-sl.png'></image>
+            </navigator>
+             <navigator class='navigator-center'>
+              <image class='icon-p' src='/pages/images/icon-p.png'></image>
+            </navigator>
+            <navigator class='navigator-center'>
+              <image class='avt-big' src='/pages/images/avt-big.png'></image>
+            </navigator>
+            <navigator class='navi-go-to'>
+              <image class='icon-point' src='/pages/images/icon-point.png'></image>
+              <text>305</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='banner banner-2'>
+    <swiper class='swiper-box' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <navigator url=''>
+            <image src="{{item}}" class="slide-image" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='news-list'>
+    <view class='tabs'>
+      <navigator class='col-xs-3  current' url=''>大咖说</navigator>
+      <navigator class='col-xs-3' url=''>收藏</navigator>
+      <navigator class='col-xs-3' url=''>推荐</navigator>
+      <navigator class='col-xs-3' url=''>热榜</navigator>
+    </view>
+    <view class='tab-content'>
+      <view class='mui-table-view'>
+        <view class='mui-table-view-cell'>
+          <navigator url=''>
+            <view class='line-row'>
+              <view class='col-xs-10'>
+                <view class='news-title'>烟台电网风机装机容量达到307万千瓦，居全省首位</view>
+              </view>
+              <view class='col-xs-2 text-right'>
+                <text class='btn-says'>大咖说</text>
+              </view>
+            </view>
+            <image class='img-news' src='/pages/images/news-img-model.png'></image>
+            <view class='image-con'>关于电热水器的使用安全，最常 见的就是地线、漏电保护器和防 电墙三种外接安全设备，今天我 们就趁此机会来详细说一说。外 接设备彼此独立，地线、漏电开</view>
+            <view class='news-list-bottom'>
+              <view class='dz' bindtap='clickZan'>
+                <block wx:if='{{!isclick}}'>
+                <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+                </block>
+                <block wx:else>
+                <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+                </block>
+                <text>{{isClickNum}}</text>
+              </view>
+              <view class='pl'>
+                <image src='/pages/images/icon-msg.png'></image>
+                120
+              </view>
+              <text class='pos'>15分钟</text>
+            </view>
+          </navigator>
+        </view>
+
+
+        <view class='mui-table-view-cell'>
+          <navigator>
+            <view class='line-row'>
+              <view class='col-xs-10'>
+                <view class='news-title'>烟台电网风机装机容量达到307万千瓦，居全省首位</view>
+              </view>
+              <view class='col-xs-2 text-right'>
+                <text class='btn-says'>大咖说</text>
+              </view>
+            </view>
+
+            <view class='word-imges'>
+              <view class='line-row'>
+                <view class='col-xs-8'>
+                  <view class='image-con'>关于电热水器的使用安全，最常 见的就是地线、漏电保护器和防 电墙三种外接安全设备，今天我 们就趁此机会来详细说一说。外 接设备彼此独立，地线、漏电开</view>
+                </view>
+                <view class='col-xs-4'>
+                  <image src='/pages/images/news-img-model.png'></image>
+                </view>
+
+              </view>
+            </view>
+
+
+            <view class='news-list-bottom'>
+              <view class='dz'>
+                <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+                <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+                <text>320</text>
+              </view>
+              <view class='pl'>
+                <image src='/pages/images/icon-msg.png'></image>
+                120
+              </view>
+              <text class='pos'>15分钟</text>
+            </view>
+          </navigator>
+        </view>
+
+        <view class='mui-table-view-cell'>
+          <navigator>
+            <view class='line-row'>
+              <view class='col-xs-10'>
+                <view class='news-title'>烟台电网风机装机容量达到307万千瓦，居全省首位</view>
+              </view>
+              <view class='col-xs-2 text-right'>
+                <text class='btn-says'>大咖说</text>
+              </view>
+            </view>
+
+            <view class='image-con'>关于电热水器的使用安全，最常 见的就是地线、漏电保护器和防 电墙三种外接安全设备，今天我 们就趁此机会来详细说一说。外 接设备彼此独立，地线、漏电开</view>
+            <view class='news-list-bottom'>
+              <view class='dz'>
+                <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+                <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+                <text>320</text>
+              </view>
+              <view class='pl'>
+                <image src='/pages/images/icon-msg.png'></image>
+                120
+              </view>
+              <text class='pos'>15分钟</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+  <bottomNav></bottomNav>
+  <slideNav></slideNav>
+</view>
+
+
+
+<!-- 蒙层 -->
+<view class='layer' style='display:none'></view>
+
+<!-- 上面的评论弹窗 -->
+<view class='Write-comments' style='display:none'>
+  <view class='container-fluid'>
+    <textarea placeholder='写评论:'></textarea>
+  </view>
+</view>
+
+
+<!-- 下面的评论弹窗 -->
+<view class='Answer' style='display:none;'>
+  <view class='container-fluid'>回复提问者</view>
+</view>

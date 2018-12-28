@@ -1,0 +1,3 @@
+/* pages/register/account.wxss */
+.get-code{ z-index: 5}
+.isregSuccess{ display: none;}

@@ -1,0 +1,106 @@
+<view class='news-page news-detail-page'>
+  <view class='says-detail'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-12'>
+          <view class='col-xs-7'>
+            <!-- <input type='text' placeholder='请输入搜索内容' /> -->
+            <navigator>
+              <button>
+                <image class='img-search' src='/pages/images/icon-search.png'></image>
+              </button>
+            </navigator>
+          </view>
+
+          <view class='col-xs-5 text-right'>
+            <navigator class='navigator-center'>
+              <image class='avt-big' src='/pages/images/avt-big.png'></image>
+            </navigator>
+            <navigator class='navi-go-to'>
+              <image class='icon-point' src='/pages/images/icon-point.png'></image>
+              <text>305</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='news-detail-title'>
+    <view class='container-fluid'>
+      11月上市公司收购新能源资产超过18亿元、风电、光伏资产正变身香饽饽
+      <view class='reading-info'>
+        <text>采购</text>
+        <text>阅读256</text>
+        <text class='pull-right'>12-26 14：53</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='news-con'>
+    <view class='container-fluid'>
+      <view class='words'>2018年，随着光伏、风电政策持续向好，越来越多 的传统行业公司开始转投新能源。仅11月份已有红阳能源、 远大智能等多家公司发布收购新能源资产公告。这股投 资热能否持续，本报持续关注。</view>
+      <image src='/pages/images/news-detail-img.jpg'></image>
+        <view class='words'>随着全球气候变化问题的日益突出以及国际社会的 普遍关注，世界各国纷纷调整自身的能源战略，增加新能 源的比重。2016年，世界新能源新增投资约为2416亿美 元（不包括大型水电），约为2004年的5.14倍，全球新 能源发电总装机容量可提供世界总电力的约24.5%。在我 国，新能源发展也取得了一些突破性和标志性的成果。</view>
+      <image src='/pages/images/news-detail-img.jpg'></image>
+      <view class='words'>而2018年随着光伏、风电政策性引导向好发展，越 来越多的传统行业公司向新能源伸出了橄榄枝，据《证券 日报》通过东方财富Choice数据统计仅11月初至昨日， 已有红阳能源、远大智能、熊猫金控、川能动力等多家公 司发布公告收购新能源资产，粗略估算上述并购金额合计 约在18.5亿元左右。</view>
+      
+      
+    </view>
+  </view>
+
+
+
+  <view class='news-list'>
+    <view class='tab-content'>
+      <view class='mui-table-view'>
+        <view class='mui-table-view-cell'>
+          <view class='Related-news'>相关新闻</view>
+          <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+            <navigator class='scroll-view-item_H'>
+              <image class='img-news' src='/pages/images/hd-model.png'></image>
+              <view class='news-list-bottom'>
+                <view class='dz'>
+                  <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+                  <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+                  <text>320</text>
+                </view>
+                <text class='pos'>15分钟</text>
+              </view>
+            </navigator>
+            <navigator class='scroll-view-item_H'>
+              <image class='img-news' src='/pages/images/hd-model.png'></image>
+              <view class='news-list-bottom'>
+                <view class='dz'>
+                  <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+                  <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+                  <text>320</text>
+                </view>
+                <text class='pos'>15分钟</text>
+              </view>
+            </navigator>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='footer-dz'>
+    <view class='col-xs-6'>
+      <image class='icon-zd2' src='/pages/images/icon-dz-h.png'></image>
+      赞
+    </view>
+    <view class='col-xs-6'>
+      <image class='icon-fow' src='/pages/images/icon-fow.png'></image>
+      转发
+    </view>
+  </view>
+
+
+  <slideNav></slideNav>
+
+
+</view>
+
+

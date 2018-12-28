@@ -1,0 +1,51 @@
+<view class='code'>
+
+  <view class='says-detail'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-12'>
+          <view class='col-xs-7'>
+            <!-- <input type='text' placeholder='请输入搜索内容' /> -->
+            <navigator>
+              <button>
+                <image class='img-search' src='/pages/images/icon-search.png'></image>
+              </button>
+            </navigator>
+          </view>
+
+          <view class='col-xs-5 text-right'>
+            <navigator class='navigator-center'>
+              <image class='avt-big' src='/pages/images/avt-big.png'></image>
+            </navigator>
+            <navigator class='navi-go-to'>
+              <image class='icon-point' src='/pages/images/icon-point.png'></image>
+              <text>305</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='register-success'>
+    <view class='container-fluie'>
+      <view class='success-title'>报名成功</view>
+      <text>线下活动您已报名成功，请在指定活动时间 </text>
+      <text>2018.12.12 10:30到达上海市徐汇区龙华 </text>
+      <text>中路1120号活动现场。</text>
+    </view>
+  </view>
+
+  <view class='Verification-Code'>
+    <view class='container-fluid'>
+      <view class='code-title'>
+        验证码
+      </view>
+      <image src='/pages/images/qcode.png'></image>
+      <view class='code-intro'>
+        <text>到达活动签到处，</text>
+        <text> 请出示该码给工作人员。</text>
+      </view>
+    </view>
+  </view>
+</view>

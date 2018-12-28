@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "社区CLUB",
+  "usingComponents": {
+    "bottomNav": "../Componets/bottomNav/bottomNav",
+    "slideNav": "../Componets/slideNav/slideNav"
+  }
+}

@@ -1,0 +1,9 @@
+/* pages/home/index.wxss */
+.drop-up{ display: none;}
+.current  .drop-up{ display: block}
+.footer{ z-index: 2}
+.layer{ z-index: 1}
+.hidelayer{ z-index: 5; display: block!important}
+.footer .col-xs-4{ padding: 0; height: 100rpx; padding-top: 18rpx; font-size: 24rpx}
+.footer .col-xs-4 .img-djxx { margin-bottom: 4px;}
+.current .drop-up{ bottom: 100rpx;}

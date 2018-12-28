@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/pCenter/upload",
+    "pages/Community/says",
+    "pages/Community/detail2",
+    "pages/Community/detail",
+    "pages/home/index",
+        
+      
+    "pages/Community/search",
+    "pages/Community/article",
+    "pages/ED/news",
+    "pages/ED/welfare",
+    "pages/ED/detail",
+    
+    "pages/Activity/index",
+    "pages/Activity/code",
+    "pages/GerPro/index",
+    "pages/news/elect",
+    "pages/news/techn",
+    "pages/news/detail",
+    "pages/news/all",
+    "pages/news/Purchase",
+    "pages/news/search",
+    "pages/register/account",
+    "pages/register/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#22292c",
+    "navigationBarTitleText": "加入我们",
+    "navigationBarTextStyle": "white"
+  }
+}

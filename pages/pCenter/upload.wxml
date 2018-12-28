@@ -1,0 +1,42 @@
+<!--pages/pCenter/upload.wxml-->
+<view class='upload-box'>
+  <view class='title'>上传您的专业证书</view>
+  <block  wx:for='{{config}}'>
+  <view class='uoload-image {{item.id==1?"uoload-image2":""}}' bindtap='chooseImage' data-id='{{item.id}}' data-check='{{item}}'>
+    <block wx:if='{{!item.src}}'>
+    <image src='../images/uploadbg.png'></image>
+    <view class='u-b-image-tips'>{{item.name}}</view>
+    </block>
+    <block wx:else>
+     <image src='{{item.src}}' class='upload-image'></image>
+    </block>
+  </view>
+  <block wx:if='{{!item.upload&&!item.checking}}'>
+   <button disabled='{{!item.src}}' class='{{item.src?"submit-btn":"comfirm-btn"}}' bindtap='submitImage' data-id='{{index}}'>确认提交</button>
+  </block>
+ <block wx:if='{{item.upload&&item.checking&&!item.checked}}'>
+ <button disabled='true' class='comfirm-btn' bindtap='submitImage'>审核中</button>
+ </block>
+ <block wx:if='{{item.upload&&item.checking&&item.checked&&!item.srcIsUpload}}'>
+ <button disabled='{{!item.srcIsUpload}}' class='{{!item.src?"submit-btn":"comfirm-btn"}}' bindtap='submitImage'>重新提交</button>
+ <text class='checked-failer-reslut'>未通过审核:图片不清晰</text>
+ </block>
+ <block wx:if='{{item.upload&&item.checking&&item.checked&&item.srcIsUpload}}'>
+已认证
+ </block>
+ <block wx:else></block>
+</block>
+  <view class='u-b-tips'>
+  <text>上传电工证或工程师证，</text> 
+ <text>并通过审核后将可直接升级至银卡会员，</text> 
+ <text>享受更多福利待遇。</text> </view>
+</view>
+
+
+
+<view class='layer {{lightbox?"show":"hide"}}' bindtap='hideLightBox'></view>
+<view class='lightbox {{lightbox?"show":"hide"}}'>
+  <view class='title'>提交成功</view>
+  <text>系统正在审核中……</text>
+  <button bindtap='hideLightBox' class='hideLightBox' data-type='button'>确定</button>
+</view>

@@ -1,0 +1,26 @@
+<!-- 组件模板 -->
+<view class='navwrapper'>
+  <view class='footer'>
+    <view class='container-fluid'>
+      <view class='col-xs-4 {{index===curindex?"current":""}}' wx:for='{{footernav}}' bindtap='showNav' data-index='{{index}}'>
+        <!-- 通过判断current来显示切换下面的图片颜色 -->
+        <image class='img-djxx' src='{{item.image1}}'></image>
+        <image class='img-djxxed' src='{{item.image2}}'></image>
+        {{item.title}}
+
+        <!-- 菜单 -->
+        <view class='drop-up'>
+          <navigator url='' wx:for='{{item.subNav}}' wx:for-item='itm'>
+            <image class='menu-sub-8' src='{{itm.image}}'></image>
+            {{itm.name}}</navigator>
+        </view>
+      </view>
+      <!-- 菜单 -->   
+    </view>
+  </view>
+
+
+<!-- 蒙层 -->
+<view class='layer {{curindex===""?"hide":""}}' bindtap='hideNav'></view>
+
+</view>

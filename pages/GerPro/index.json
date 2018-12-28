@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "德家产品",
+  "usingComponents": {
+    "bottomNav": "../Componets/bottomNav/bottomNav",
+    "slideNav": "../Componets/slideNav/slideNav"
+  }
+}

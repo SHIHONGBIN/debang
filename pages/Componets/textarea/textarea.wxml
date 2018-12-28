@@ -1,0 +1,3 @@
+<view class='Big-topic-all big-fixed commuites-textarea' wx:if='{{proA}}'>
+  <textarea placeholder="点击输入留言" auto-focus='{{proA}}' show-confirm-bar='true' auto-height fixed='true' cursor-spacing='20rpx' bindinput='textareaInput' bindconfirm='confirmInput' bindblur='defaultInput' />
+</view>

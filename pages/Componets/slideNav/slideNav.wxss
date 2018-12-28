@@ -1,0 +1,38 @@
+/*全局bootstrap*/page{padding-bottom: 30rpx;}
+.lead{margin-bottom:20px;font-size:16px;font-weight:300;line-height:1.4;}
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+.text-center{text-align:center;}
+.text-justify{text-align:justify;}
+.text-nowrap{white-space:nowrap;}
+.text-lowercase{text-transform:lowercase;}
+.text-uppercase{text-transform:uppercase;}
+.text-capitalize{text-transform:capitalize;}
+.pull-right{float:right!important;}
+.pull-left{float:left!important;}
+.hide{display:none!important;}
+.show{display:block!important;}
+.layer{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1040;background-color: #000;opacity: .6; display: none;}
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.container-fluid{padding-right:30rpx;padding-left:30rpx;margin-right:auto;margin-left:auto}
+.row{margin-right:-15px;margin-left:-15px;clear: both;overflow: hidden;}
+.btn-menu image{width: 72rpx;height: 72rpx;}
+.btn-menu{position: fixed;bottom: 10%;left: 32rpx;}
+.Sideslip-menu{width: 370rpx;position: fixed;left: 0;top: 0;bottom: 0;z-index: 9999;background: #22292c;}
+.per-info{background: #D0111B;padding: 110rpx 0 86rpx 0;}
+.per-info .avt-big{width: 174rpx;height: 174rpx;border-radius: 50%;border:6rpx solid #fff;}
+.wx-name{font-weight: bold;font-size: 24rpx;color: #fff;margin-top: 30rpx;}
+.points-number image{width: 32rpx;height: 32rpx;position: relative;top: 6rpx;margin-left: 4rpx;}
+.wx-name image{width: 30rpx;height: 24rpx;position: relative;top: 0rpx;left: 4rpx;}
+.points-number{font-size: 24rpx;font-weight: bold;color: #fff;margin-top: 18rpx;}
+.dg{font-size: 24rpx;color: #fff;margin-top: 24rpx;}
+.munu-list{margin-top: 60rpx;position: relative;padding-bottom: 50rpx;}
+.munu-list navigator{font-size: 24rpx;color: #fff;padding: 20rpx 50rpx;}
+.menu-sub-12{width: 37rpx;height: 32rpx;position: relative;top: 6rpx;margin-right: 10rpx;}
+.menu-sub-13{width: 37rpx;height: 32rpx;position: relative;top: 5rpx;margin-right: 14rpx;}
+.munu-list::after{position: absolute;right: 46rpx;left: 46rpx;height: 1px;content: '';-webkit-transform: scaleY(.5);transform: scaleY(.5);background-color: #707070;bottom: -1px;}
+.call-number{margin-top: 160rpx;padding-left: 46rpx;}
+.number-phone{font-size: 32rpx;color: #A89440;}
+.number-phone image{width:34rpx;height: 34rpx;display: inline-block;}
+
+.showlayer{ display: block; z-index: 5}

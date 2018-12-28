@@ -1,0 +1,46 @@
+<view>
+  <view class='search-page'>
+    <view class='col-xs-2 col-left'>
+      <image class='icon-search' src='/pages/images/icon-search.png'></image>
+    </view>
+    <view class='col-xs-8'>
+      <input type='text' placeholder='请输入搜索内容' />
+    </view>
+
+    <view class='col-xs-2 col-right'>
+      <navigator>取消</navigator>
+    </view>
+  </view>
+
+  <view class='search-result'>
+    <view class='mui-table-view'>
+      <view class='mui-table-view-cell'>
+        <view class='col-xs-10'>
+          <text>电工</text>盛宴现场：山海相连，四方辐辏，</view>
+        <view class='col-xs-2'>X</view>
+      </view>
+      <view class='mui-table-view-cell'>
+        <view class='col-xs-10'>
+          <text>电工</text>最全最实用的经验公式，快快收藏</view>
+        <view class='col-xs-2'>X</view>
+      </view>
+      <view class='mui-table-view-cell'>
+        <view class='col-xs-10'>
+          恶劣
+          <text>电工 </text>VS 诚实
+          <text>电工</text>
+        </view>
+        <view class='col-xs-2'>X</view>
+      </view>
+      <view class='mui-table-view-cell'>
+        <view class='col-xs-10'>
+         <text>电工</text>盛宴现场：古韵天城，人才辈出
+        </view>
+        <view class='col-xs-2'>X</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<slideNav></slideNav>
+

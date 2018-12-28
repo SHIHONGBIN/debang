@@ -1,0 +1,56 @@
+<view class='write-article'>
+  <view class='container-fluid'>
+    <view class='keep-con'>
+      <navigator>
+        <image src='/pages/images/icon-save.png'></image>
+        保存</navigator>
+      <navigator>下一步</navigator>
+    </view>
+
+    <view class='Add-tags'>
+      <view class='add-tag-title'>添加标签</view>
+      <view class='add-line'>
+        <text class='selected'>电工技师</text>
+        <text>容电气工程师</text>
+        <text>采购</text>
+      </view>
+    </view>
+
+    <view class='Add-tags'>
+      <view class='add-tag-title'>添加标题</view>
+      <textarea style='font-size:24rpx;color:#22292C;' bindblur="bindTextAreaBlur" auto-height placeholder="请添加标题" />
+      <view class='fill-con'>你还能
+        <text>20</text>输入</view>
+    </view>
+
+    <view class='Add-tags'>
+      <view class='add-tag-title'>添加段落</view>
+      <textarea style='font-size:24rpx;color:#22292C;' bindblur="bindTextAreaBlur" auto-height placeholder="请添加段落" />
+      <view class='fill-con'>你还能
+        <text>120</text>输入</view>
+    </view>
+
+    <view class='Add-tags'>
+      <view class='add-tag-title'>添加图片</view>
+      <!-- 差相应的添加图片的小程序接口 -->
+    </view>
+
+  </view>
+</view>
+
+
+<view class='add-con'>
+  <view class='col-xs-6'>
+    <image class='icon-pic' src='/pages/images/icon-word.png'></image>
+    <image class='icon-add' src='/pages/images/icon-add.png'></image>
+    添加段落</view>
+  <view class='col-xs-6'>
+    <image class='icon-pic' src='/pages/images/icon-pic.png'></image>
+    <image class='icon-add' src='/pages/images/icon-add.png'></image>容添加图片</view>
+</view>
+
+
+
+
+
+<slideNav></slideNav>

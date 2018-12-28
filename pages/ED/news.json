@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "DE新闻",
+  "usingComponents": {
+    "slideNav": "../Componets/slideNav/slideNav"
+  }
+}

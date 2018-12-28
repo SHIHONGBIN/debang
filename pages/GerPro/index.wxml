@@ -1,0 +1,77 @@
+<view class='home-page'>
+
+  <view class='says-detail'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-12'>
+          <view class='col-xs-7'>
+            <!-- <input type='text' placeholder='请输入搜索内容' /> -->
+            <navigator>
+              <button>
+                <image class='img-search' src='/pages/images/icon-search.png'></image>
+              </button>
+            </navigator>
+          </view>
+          <view class='col-xs-5 text-right'>
+            <navigator class='btn-login'>登录</navigator>
+            <navigator class='navigator-center'>
+              <image class='avt-big' src='/pages/images/avt-big.png'></image>
+            </navigator>
+            <navigator class='navigator-trips' url=''>
+              <image class='icon-news' src='/pages/images/icon-news-h.png'></image>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='banner banner-2'>
+    <swiper class='swiper-box' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <navigator url=''>
+            <image src="{{item}}" class="slide-image" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+  <view class='ger-pro-menu'>
+    <view class='container-fluid'>
+      <view class='col-xs-6'>
+        <navigator>
+          <image class='main-1' src='/pages/images/main-1.png'></image>
+          新品速递
+        </navigator>
+      </view>
+      <view class='col-xs-6 bac-red'>
+        <navigator>
+          <image class='main-2' src='/pages/images/main-2.png'></image>
+          产品中心
+        </navigator>
+      </view>
+      <view class='col-xs-6 bac-red'>
+        <navigator>
+          <image class='main-3' src='/pages/images/main-3.png'></image>
+          选型查价
+        </navigator>
+      </view>
+      <view class='col-xs-6'>
+        <navigator>
+          <image class='main-4' src='/pages/images/main-4.png'></image>
+          防伪查询
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+<bottomNav></bottomNav>
+<slideNav></slideNav>
+
+
+</view>
+
+ 

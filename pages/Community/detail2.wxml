@@ -1,0 +1,166 @@
+<view class='says-detail common-detail'>
+  <view class='search'>
+    <view class='container-fluid'>
+      <view class='col-xs-12'>
+        <view class='col-xs-7'>
+          <!-- <input type='text' placeholder='请输入搜索内容' /> -->
+          <navigator>
+            <button>
+              <image class='img-search' src='/pages/images/icon-search.png'></image>
+            </button>
+          </navigator>
+        </view>
+
+        <view class='col-xs-5 text-right'>
+          <navigator class='navigator-center'>
+            <image class='icon-sl' src='/pages/images/icon-sl.png'></image>
+          </navigator>
+          <navigator class='navigator-center'>
+            <image class='icon-p' src='/pages/images/icon-p.png'></image>
+          </navigator>
+          <navigator class='navigator-center'>
+            <image class='avt-big' src='/pages/images/avt-big.png'></image>
+          </navigator>
+          <navigator class='navi-go-to'>
+            <image class='icon-point' src='/pages/images/icon-point.png'></image>
+            <text>305</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='electrician'>
+    <view class='container-fluid'>
+      <view class='line-row'>
+        <view class='col-xs-10'>用万用表测三轮电动车控制器，该如何判断好坏?</view>
+        <view class='col-xs-2'>
+          <text>维修电工</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='user-conllect'>
+    <view class='container-fluid'>
+      <view class='line-row'>
+        <view class='col-xs-7'>
+          <view class='line-row'>
+            <image class='avt-mid' src='/pages/images/avt-mid.png'></image>
+            <view class='col-7-con'>
+              电气小能手
+              <text>电工技师</text>
+            </view>
+          </view>
+        </view>
+        <view class='col-xs-5'>
+          <image class='icon-fav' src='/pages/images/icon-fav.png'></image>收藏
+          <text>2018.10.25</text>
+        </view>
+      </view>
+
+      <view class='line-row'>
+        <view class='line-p'>
+          判断控制器内部的好坏，最好是将控制器两端的螺钉撤 开，直接观察内部有没有烧糊的痕迹，或者是内部的电 阻、电容器、线路板是否有烧焦的痕迹，如果有的话， 接没有必要再用万用表去测量控制器的好坏了。
+        </view>
+        <view class='line-p'> 维修技术的师傅，是没有办法来修理控制器内部的这些 东西的，特别是MOS场效应管，和场效应管的栅一源极、 栅漏极损坏，都会引起恶性循环，将驱动集成块或串联 在它们之间的电阻损坏。而且里面电路板都是双面铜泊 板，它要求修理师傅具有热风枪，才能简单安全地将损坏 的场效应管撤下来，重新更换功率管。 下面介绍简单用万用表来判断控制器的好坏。</view>
+        <view class='line-p'>(1).将数字万用表拨至测量 (2).接电瓶组的两根电线是控制器中最粗的电线 (3).如果其中两根电线电阻值小或为零，则说明控制器内 部的场效应管已经击穿损坏了。 (4).上图中②出来的五根细电线为接电机中的霍尔传感 器的。</view>
+      </view>
+    </view>
+
+
+  </view>
+
+  <view class='Big-topic-all'>
+    <view class='Big-topic Big-replay-list'>
+      <view class='container-fluid'>
+        <view class='dk-title'>大咖答</view>
+
+        <view class='row big-row-con' wx:for='{{dakaAnswer}}' wx:key=''>
+          <view class='col-xs-12'>
+            <view class='col-xs-2'>
+              <image class='avt-small' src='{{item.userheader}}'></image>
+            </view>
+            <view class='col-xs-10'>
+              <view class='avt-small-con'>
+                <view class='avt-name'>{{item.name}}
+                  <text>{{item.time}}</text>
+                </view>
+                <view class='avt-con'>{{item.title}}</view>
+              </view>
+
+               <view class='avt-repply' wx:for='{{item.replay}}' wx:for-index="idx" wx:for-item='ite'>
+                <view class='repply-name'>{{ite.name}}
+                  <image src='{{ite.image}}'></image>
+                </view>
+                <view class='repply-con'>
+                  {{ite.content}}
+                </view>
+                <view class='row'>
+                  <view class='col-xs-4 {{ite.isclick?"current":""}}' bindtap='clickSubZan' data-parentId='{{index}}' data-subId='{{idx}}'>
+                    <block wx:if='{{!ite.isclick}}'>
+                      <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+                    </block>
+                    <block wx:else>
+                      <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+                    </block>
+                    <text>{{ite.zanNum}}</text>
+                  </view>
+                  <view class='col-xs-4' bindtap="bindButtonTap" data-patentid='{{item.id}}' data-childid='{{ite.id}}'>
+                    <image class='icon-pl' src='/pages/images/icon-msg-3.png'></image>
+                    <text>{{ite.answerNum}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<slideNav></slideNav>
+
+<view class='Big-topic-all big-fixed'  wx:if='{{!focus}}'>
+ <view class='row'>
+      <view class='col-xs-4 {{dakaDialog.isclick?"current":""}}' bindtap='clickZan'>
+        <block wx:if='{{!dakaDialog.isclick}}'>
+          <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+        </block>
+        <block wx:else>
+          <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+        </block>
+        <text>{{dakaDialog.zanNum}}</text>
+      </view>
+      <view class='col-xs-4' bindtap="bindButtonTap" data-patentid=''>
+        <image class='icon-pl' src='/pages/images/icon-msg-3.png'></image>
+        <text>评论</text>
+      </view>
+      <view class='col-xs-4'>
+        <image class='icon-zf' src='/pages/images/icon-fow.png'></image>
+        <text>转发</text>
+      </view>
+    </view>
+</view>
+<!-- //调用组件textarea -->
+<!-- 大咖评论 -->
+<textarea pro-a='{{focus}}' wx:if='{{focus}}' bindmyevent="confirmInput" bindmyevent2='defaultInput'></textarea>
+
+<!-- 蒙层 -->
+<view class='layer' style='display:none'></view>
+
+<!-- 上面的评论弹窗 -->
+<view class='Write-comments' style='display:none'>
+  <view class='container-fluid'>
+    <textarea placeholder='写评论:'></textarea>
+  </view>
+</view>
+
+
+<!-- 下面的评论弹窗 -->
+<view class='Answer' style='display:none;'>
+  <view class='container-fluid'>回复提问者</view>
+</view>

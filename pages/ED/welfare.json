@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "DE公益",
+  "usingComponents": {
+
+    "slideNav": "../Componets/slideNav/slideNav"
+  }
+}

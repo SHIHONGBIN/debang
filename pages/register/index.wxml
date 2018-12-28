@@ -1,0 +1,15 @@
+<view class='register'>
+  <view class='container-fluid'>
+    <view class='logo'>
+      <image src='/pages/images/icon-logo-1.png'></image>
+    </view>
+    <view class='welcome text-center'>
+      <view>欢迎使用德力助手 </view>
+      <view>希望这里成为属于你的电气乐园</view>
+    </view>
+    <view class='join-in'>
+      <navigator url=''>立即加入</navigator>
+    </view>
+    <navigator class='visitor-identity' url=''>以访客身份继续</navigator>
+  </view>
+</view>

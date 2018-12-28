@@ -1,0 +1,3 @@
+.commuites-textarea textarea{width: 100%; padding:5px 15px; border-top: solid 1rpx #e0e0e0; height: 150rpx;}
+.big-fixed{position: fixed;width: 100%;bottom: 0;background: #fff;border-top: 1rpx solid #ddd;}
+.says-detail{padding-bottom: 150rpx;}

@@ -1,0 +1,89 @@
+<view class='news-page'>
+  <view class='says-detail'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-12'>
+          <view class='col-xs-7'>
+            <!-- <input type='text' placeholder='请输入搜索内容' /> -->
+            <navigator>
+              <button>
+                <image class='img-search' src='/pages/images/icon-search.png'></image>
+              </button>
+            </navigator>
+          </view>
+
+          <view class='col-xs-5 text-right'>
+            <navigator class='navigator-center'>
+              <image class='avt-big' src='/pages/images/avt-big.png'></image>
+            </navigator>
+            <navigator class='navi-go-to'>
+              <image class='icon-point' src='/pages/images/icon-point.png'></image>
+              <text>305</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='banner banner-2'>
+    <swiper class='swiper-box' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <navigator url=''>
+            <image src="{{item}}" class="slide-image" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='news-list'>
+    <view class='tabs'>
+      <navigator class='col-xs-3' url=''>全部</navigator>
+      <navigator class='col-xs-3' url=''>电工技师</navigator>
+      <navigator class='col-xs-3' url=''>电气工程师</navigator>
+      <navigator class='col-xs-3 current' url=''>采购</navigator>
+    </view>
+    <view class='tab-content'>
+      <view class='mui-table-view'>
+        <view class='mui-table-view-cell'>
+          <navigator>
+            <view class='news-title'>烟台电网风机装机容量达到307万千瓦，居全省首位</view>
+            <image class='img-news' src='/pages/images/news-img-model.png'></image>
+            <view class='news-list-bottom'>
+              <text class='top'>置顶</text>
+              <text class='pos'>电工技师</text>
+              <view class='dz'>
+                <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+                <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+                <text>320</text>
+              </view>
+              <text class='pos'>15分钟</text>
+            </view>
+          </navigator>
+        </view>
+
+        <view class='mui-table-view-cell'>
+          <navigator>
+            <view class='news-title'>烟台电网风机装机容量达到307万千瓦，居全省首位</view>
+            <image class='img-news' src='/pages/images/news-img-model.png'></image>
+            <view class='news-list-bottom'>
+              <text class='pos'>电工技师</text>
+              <view class='dz'>
+                <image class='icon-dz' src='/pages/images/icon-zan.png'></image>
+                <image class='icon-dz-1' src='/pages/images/icon-zan-1.png'></image>
+                <text>320</text>
+              </view>
+              <text class='pos'>15分钟</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <bottomNav></bottomNav>
+  <slideNav></slideNav>
+</view>

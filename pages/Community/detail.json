@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "社区CLUB",
+  "usingComponents": {
+    "slideNav": "../Componets/slideNav/slideNav",
+    "textarea":"../Componets/textarea/textarea"
+  }
+}

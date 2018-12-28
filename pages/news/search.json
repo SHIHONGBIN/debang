@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "资讯NEWS",
+  "usingComponents": {
+    "slideNav": "../Componets/slideNav/slideNav"
+  }
+}

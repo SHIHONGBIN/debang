@@ -1,0 +1,98 @@
+<view class='home-page'>
+
+  <view class='says-detail'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-12'>
+          <view class='col-xs-7'>
+            <!-- <input type='text' placeholder='请输入搜索内容' /> -->
+            <navigator>
+              <button>
+                <image class='img-search' src='/pages/images/icon-search.png'></image>
+              </button>
+            </navigator>
+          </view>
+          <view class='col-xs-5 text-right'>
+            <navigator class='btn-login'>登录</navigator>
+            <navigator class='navigator-center'>
+              <image class='avt-big' src='/pages/images/avt-big.png'></image>
+            </navigator>
+            <navigator class='navigator-trips' url=''>
+              <image class='icon-news' src='/pages/images/icon-news-hs.png'></image>
+              <text class='number'>1</text>
+            </navigator>
+
+            <view class='news-trips'>
+              <navigator url=''>
+                <text>您有一个新消息！</text>
+                <image src='/pages/images/borld-msg.png'></image>
+              </navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='banner'>
+    <swiper class='swiper-box' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <navigator url=''>
+            <image src="{{item}}" class="slide-image" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+  <view class='home-menu'>
+    <view class='container-fluid'>
+      <view class='row'>
+        <view class='col-xs-12'>
+          <view class='col-xs-6'>
+            <navigator url=''>
+              <image class='img-model' src='/pages/images/img-zx.png'></image>
+              <view class='menu-words'>
+                资讯 NEWS
+                <image class='img-zx' src='/pages/images/menu-sub-5.png'></image>
+              </view>
+            </navigator>
+          </view>
+          <view class='col-xs-6'>
+            <navigator url=''>
+              <image class='img-model' src='/pages/images/img-sq.png'></image>
+              <view class='menu-words'>
+                社区 CLUB
+                <image class='img-zx' src='/pages/images/menu-sub-6.png'></image>
+              </view>
+            </navigator>
+          </view>
+          <view class='col-xs-6'>
+            <navigator url=''>
+              <image class='img-model' src='/pages/images/img-tool.png'></image>
+              <view class='menu-words'>
+                内容工具 TOOLS
+                <image class='img-zx' src='/pages/images/icon-tool-sel.png'></image>
+              </view>
+            </navigator>
+          </view>
+          <view class='col-xs-6'>
+            <navigator url=''>
+              <image class='img-model' src='/pages/images/img-qd.png'></image>
+              <view class='menu-words'>
+                敬请期待
+                <image class='img-zx' src='/pages/images/menu-jqd.png'></image>
+              </view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+<bottomNav></bottomNav>
+<slideNav></slideNav>
+</view>

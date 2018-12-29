@@ -1,0 +1,144 @@
+
+
+
+
+<view class='pro-center'>
+  <view class='Ele-card'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-3'>
+          <navigator url=''>
+            <image class='img-search-white' src='/pages/images/perCenter/icon-search-white.png'></image>
+          </navigator>
+
+        </view>
+        <view class='col-xs-9 text-right'>
+          <navigator>
+            <image class='img-xx' src='/pages/images/icon-msg-1.png'></image>
+          </navigator>
+          <navigator>
+            <image class='img-setting' src='/pages/images/icon-setting.png'></image>
+          </navigator>
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <view class='ele-card-con'>
+    <view class='ele-card-inner'>
+      <view class='my-card'>我的电子卡
+        <text>DE20180631</text>
+      </view>
+      <view class='per-data'>
+        <image class='img-tx' src='/pages/images/perCenter/icon-user-nimi.png'></image>
+        <view class='per-data-info'>
+          fox72982
+          <text>305/2000</text>
+        </view>
+        <view class='dg-pro'>
+          <view class='dg2' bindtap='bindShowMsg'>
+            <image src='/pages/images/perCenter/icon-dj.png'></image>
+           {{grade_name}}
+            <image class='x-arrow' src='/pages/images/perCenter/x-arrow.png'></image>
+          </view>
+
+          <!-- 下拉需要显示的列表 -->
+          <view class="select_box" wx:if="{{select}}">
+            <view wx:for="{{grades}}" wx:key="unique">
+              <view class="select_one" bindtap="mySelect" data-name="{{item}}">{{item}}</view>
+            </view>
+          </view>
+
+
+
+          <view class='progess'>
+            <text></text>
+          </view>
+        </view>
+      </view>
+
+      <view class='avail-inter'>
+        可用积分
+        <view class='nuber-inter'>
+          <image src='/pages/images/perCenter/icon-jf.png'></image> 305</view>
+      </view>
+    </view>
+
+    <image class='img-ka' src='/pages/images/perCenter/ka.png'></image>
+  </view>
+
+  <view class='sign-record'>
+    <view class='container-fluid'>
+      <view class='bac-white'>
+        <view class='sign-title'>已签到2天</view>
+        <view class='sign-date'>
+          <view class='sign-in'>
+            <text class='num'>1</text>
+            <text class='line'></text>
+          </view>
+          <view class='sign-in'>
+            <text class='num'>2</text>
+            <text class='line'></text>
+          </view>
+          <view>
+            <text class='num'>3</text>
+            <text class='line'></text>
+          </view>
+          <view>
+            <text class='num'>4</text>
+            <text class='line'></text>
+          </view>
+          <view>
+            <text class='num'>5</text>
+            <text class='line'></text>
+          </view>
+          <view>
+            <text class='num'>6</text>
+            <text class='line'></text>
+          </view>
+          <view>
+            <text class='num'>7</text>
+            <text class='line'></text>
+          </view>
+        </view>
+
+        <view class='sign-row'>
+          <navigator bindtap="submit">积分记录</navigator>
+          <navigator>签到赢积分</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='inter-list'>
+    <view class='container-fluid'>
+      <navigator url=''>
+        <image class='img-jfgz' src='/pages/images/perCenter/icon-jfgz.png'></image> 积分规则</navigator>
+      <navigator url=''>
+        <image class='img-wdlt' src='/pages/images/icon-wechat.png'></image> 我的论坛</navigator>
+      <navigator url=''>
+        <image class='img-wdgj' src='/pages/images/icon-tool-1.png'></image> 我的工具</navigator>
+    </view>
+  </view>
+
+  <bottomNav></bottomNav>
+  <slideNav></slideNav>
+</view>
+
+
+<!-- 蒙城 -->
+<view class='layer' wx:if="{{showModal}}"></view>
+
+<!-- 签到成功弹窗 -->
+<view class='register-success-modal sign-success-modal' wx:if="{{showModal}}">
+  <view class='title'>
+    <text>签到成功</text>
+    <navigator>累计签到2天，连续签到2天</navigator>
+  </view>
+  <view class='points'>
+    <image src='/pages/images/icon-success.png'></image>
+    <text>+5积分</text>
+  </view>
+  <button class='btn-confirm' bindtap="go">知道了</button>
+</view>
+

@@ -1,0 +1,294 @@
+<view class='Integral-rule'>
+  <image class='rule-banner' src='/pages/images/perCenter/rule-banner.jpg'></image>
+  <view class='inte-object'>
+    <view class='container-fluid'>
+      <view class='title'>积分对象</view>
+      <view class='object-con'>
+        <text>A.易电工注册用户</text>
+        <text>B.德力助手小程序注册用户</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='inte-object'>
+    <view class='container-fluid'>
+      <view class='title'>积分获取规则</view>
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          <image src='/pages/images/perCenter/icon-dot.png'></image> 注册及认证</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>注册会员+10积分 +10经验值（只限首次注册）</text>
+              <text>上传电工证/工程师证并通过验证</text>
+              <text>+100积分 +100经验值（只限首次认证）</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          <image src='/pages/images/perCenter/icon-dot.png'></image>邀请关注（易电工）</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>邀请好友关注并注册 +30积分/人 +30经验值</text>
+              <text>（每天限3人）</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          <image src='/pages/images/perCenter/icon-dot.png'></image>每日签到</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>每日签到 +5积分 +5经验值 <text>（中断签到重新计算；)</text></text>
+              <text>学习课程 +5积分/课时 +5经验值 <text>（只限该门课程）</text></text>
+              <text>考试通过 +30积分/场 +30经验值 <text>（只限该门课程首次测试）</text></text>
+              <text>课程评分（或评论） +5积分/门 +5经验值 <text>（只限该门课程首次评分）</text></text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          <image src='/pages/images/perCenter/icon-dot.png'></image>内容浏览及分享</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>平台内容转发分享 +2积分/次 +5经验值 <text>（最高2次/天）</text></text>
+              <text>新闻中心浏览 +2积分/次 +2经验值 <text>（最高1次/天）</text></text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          <image src='/pages/images/perCenter/icon-dot.png'></image>论坛</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>发帖（50字以上） +20积分/帖 +20经验值 <text>（最高2次/天）</text></text>
+              <text>回复（10字以上） +5积分/帖 +5经验值 <text>（最高2次/天）</text></text>
+              <text>点赞 +1积分/帖 +1经验值 <text>（最高2次/天）</text></text>
+              <text>精华帖（管理员评选） +100积分/帖 +100经验值 <text>（次数不限）</text></text>
+              <text>论坛活动（含直播） +10积分/次 +10经验值 <text>（每场活动/次）</text></text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          <image src='/pages/images/perCenter/icon-dot.png'></image>活动</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>线上活动（H5) +30经验值 <text>（每场活动/次）</text></text>
+              <text>线下课程（通过系统报名） +30经验值 <text>（每场活动/次）</text></text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='every-trips'>-每天积分上限200分，超出部分不记录（不含精华帖）</view>
+
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          <image src='/pages/images/perCenter/icon-dot.png'></image>升级奖励</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>金卡 +300积分 （一次）</text>
+              <text>铂金卡 +500积分（一次）</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          <image src='/pages/images/perCenter/icon-dot.png'></image>生日奖励</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>银卡 +100积分 （每年生日/次）</text>
+              <text>金卡 +150积分 （每年生日/次）</text>
+              <text>铂金卡 +200积分 （每年生日/次）</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          <image src='/pages/images/perCenter/icon-dot.png'></image>促销（易电工）</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>活动期间下单并核销订单 10元=1积分 +1经验值 <text>（每天上限500积分）</text></text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+
+    </view>
+  </view>
+
+  <view class='inte-object'>
+    <view class='container-fluid'>
+      <view class='title'>积分使用规则</view>
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          A.积分有效期:</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>2019.1.31（正式上线）</text>
+              <text>2019.1.31（正式上线）</text>
+              <text>2019.1.31（正式上线）</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          B.经验值有效期：</view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>同积分有效期规则</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          C.积分商城兑换：
+
+        </view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>   可在积分商城兑换实物礼品，并扣减对应积分；银卡
+    及以上会员可享受专属优惠兑换</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          D.精品课程学习：
+        </view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text> 普通会员可使用积分兑换精品课程</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='inte-object-list'>
+        <view class='sub-title'>
+          E.线下活动报名：
+        </view>
+        <view class='object-con'>
+          <view class='mui-table-view'>
+            <view class='mui-table-view-cell'>
+              <text>普通会员可使用积分兑换线下活动门票</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='inte-object inte-dj'>
+    <view class='container-fluid'>
+      <view class='title'>成长等级</view>
+      <view class='inte-object-list'>
+        <view class='border-bottom'>
+          <view class='sub-title'>
+            A.会员徽章：
+          </view>
+          <view class='object-con'>
+            <view class='mui-table-view'>
+              <view class='mui-table-view-cell'>
+                <view class='hz-dj'>
+                  等级徽章：获得经验值以升级，根据积分等级，系统 自动为用户点亮专属徽章
+                </view>
+                <view class='view-text'>1.注册电工-
+                  <image src='/pages/images/perCenter/dj-img-1.png'></image> 注册会员 (注册即可)</view>
+                <view class='view-text'>2.认证电工-
+                  <image src='/pages/images/perCenter/dj-img-2.png'></image> 银卡会员 +999经验值
+                  <text>(上传电工证/工程师证可直接升级)</text>
+                </view>
+                <view class='view-text'>3.金牌电工-
+                  <image src='/pages/images/perCenter/dj-img-3.png'></image>金卡会员+2999经验值 </view>
+                <view class='view-text'>
+                  4.电工大师-
+                  <image src='/pages/images/perCenter/dj-img-4.png'></image>铂金会员 +5999经验值
+                </view>
+
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class='border-bottom'>
+          <view class='sub-title'>
+            B.等级福利：
+          </view>
+          <view class='object-con'>
+            <view class='mui-table-view'>
+              <view class='mui-table-view-cell'>
+
+                <view class='view-text'>1.注册电工-注册会员
+                  <text>可使用积分支付精品课程、德家工具</text>
+                </view>
+                <view class='view-text'>2.认证电工-银卡会员
+                  <text>生日奖励+100积分 </text>
+                  <text>可使用积分支付沙龙活动、德家工具</text>
+                  <text>可免费享受精品课程和积分礼品优惠</text>
+                </view>
+                <view class='view-text'>3.金牌电工-金卡会员
+                  <text>升级奖励+300积分 生日奖励+150积分</text>
+                  <text>可免费享受精品课程、沙龙活动、积分礼品优惠和德 家工具</text>
+                </view>
+                <view class='view-text'>4.电工大师-铂金会员
+                  <text>升级奖励+500积分 生日奖励+200积分</text>
+                  <text>可免费享受精品课程、沙龙活动、积分礼品优惠和德 家工具</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+
+
+
+
+
+
+  <bottomNav></bottomNav>
+  <slideNav></slideNav>
+</view>

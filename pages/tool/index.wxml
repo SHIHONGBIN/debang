@@ -1,0 +1,117 @@
+<view class='tool'>
+  <view class='says-detail common-detail'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-12'>
+          <view class='col-xs-7'>
+            <navigator>
+              <button>
+                <image class='img-search' src='/pages/images/icon-search.png'></image>
+              </button>
+            </navigator>
+          </view>
+          <view class='col-xs-5 text-right'>
+            <navigator class='navigator-center' bindtap='showSlideBox'>
+              <image class='icon-sl' src='/pages/images/icon-sl.png'></image>
+            </navigator>
+            <navigator class='navigator-center'>
+              <image class='avt-big' src='/pages/images/avt-big.png'></image>
+            </navigator>
+            <navigator class='navi-go-to'>
+              <image class='icon-point' src='/pages/images/icon-point.png'></image>
+              <text>305</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='tool-banner'>
+    <image src='/pages/images/perCenter/tool-banner.png'></image>
+  </view>
+
+  <view class='tabs'>
+    <view class='ul'>
+      <view class='col-xs-6 current'>
+        <navigator>最新
+          <image src='/pages/images/perCenter/x-arrow2.png'></image>
+        </navigator>
+      </view>
+      <view class='col-xs-6'>
+        <navigator>最热
+          <image src='/pages/images/perCenter/x-arrow2.png'></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <!-- 最新 -->
+  <view class='tab-content'>
+    <view class='col-xs-6'>
+      <navigator>
+        <text class='jf'>20积分</text>
+        <image class='img-model' src='/pages/images/perCenter/loan-img.png'></image>
+        <text class='con-model'>Delixi-Electric 2018 Plan</text>
+        <text class='text-time'>2018.02.15</text>
+      </navigator>
+    </view>
+    <view class='col-xs-6'>
+      <navigator>
+        <text class='yhq'>已获取</text>
+        <image class='img-model' src='/pages/images/perCenter/loan-img.png'></image>
+        <text class='con-model'>Delixi-Electric 2018 Plan</text>
+        <text class='text-time'>2018.02.15</text>
+      </navigator>
+    </view>
+  </view>
+
+
+  <!-- 最热 -->
+  <view class='tab-content' style='display:none;'>
+    <view class='col-xs-6'>
+      <navigator>
+        <text class='jf'>20积分</text>
+        <image class='img-model' src='/pages/images/perCenter/loan-img.png'></image>
+        <text class='con-model'>Delixi-Electric 2018 Plan</text>
+        <text class='text-time'>2018.02.15</text>
+      </navigator>
+    </view>
+    <view class='col-xs-6'>
+      <navigator>
+        <text class='yhq'>已获取</text>
+        <image class='img-model' src='/pages/images/perCenter/loan-img.png'></image>
+        <text class='con-model'>Delixi-Electric 2018 Plan</text>
+        <text class='text-time'>2018.02.15</text>
+      </navigator>
+    </view>
+  </view>
+
+
+  <bottomNav></bottomNav>
+  <slideNav></slideNav>
+</view>
+
+<view class='layer {{slideNav?"show":"hide"}}' bindtap='hideSlideBox'></view>
+
+<!-- 右边侧栏 -->
+<view class='right-column {{slideNav?"show":"hide"}}'>
+  <view class='mui-table-view'>
+    <view class='mui-table-view-cell'>
+      <text class='dot'></text>电工实用工具
+    </view>
+    <view class='mui-table-view-cell'>
+      <text class='dot'></text>电气工程师实用工具
+    </view>
+    <view class='mui-table-view-cell'>
+      <text class='dot'></text>产品资料
+      <image class='x-bottom-arrow' src='/pages/images/perCenter/x-bottom-arrow.png'></image>
+      <view class='mui-drowdown'>
+      
+        <text  bindtap='getCurIndex' data-id='{{index}}' class='{{productMsgCur==index?"current":""}}' wx:for='{{productMsg}}'>{{item}}</text>
+        <!-- <text>ic</text>
+        <text>fd</text> -->
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+<view class='notice'>
+  <view class='container-fluid'>
+    <view class='mui-table-view'>
+      <navigator class='mui-table-view-cell' url=''>
+        <image class='icon-laba' src='/pages/images/icon-laba.png'></image>
+        <view class='notice-list-fon'>
+          <view class='title mui-ellipsis-2'>数字时代下，与最佳雇主一起探索人力资本市场的 新趋势和新发展。</view>
+          <text>2018-11-28</text>
+
+        </view>
+      </navigator>
+      <navigator class='mui-table-view-cell' url=''>
+        <image class='icon-laba' src='/pages/images/icon-laba.png'></image>
+        <view class='notice-list-fon'>
+          <view class='title mui-ellipsis-2'>墙都不服，就服这升级版的DZ47PLEY-63 漏电保 护断路器</view>
+          <text>2018-11-28</text>
+        </view>
+      </navigator>
+      <navigator class='mui-table-view-cell' url=''>
+        <image class='icon-laba' src='/pages/images/icon-laba.png'></image>
+        <view class='notice-list-fon'>
+          <view class='title mui-ellipsis-2'>1个重阳节，6场慰问，关爱600多位长者，德家80 多位志愿者在行动！</view>
+          <text>2018-11-28</text>
+        </view>
+      </navigator>
+      <navigator class='mui-table-view-cell' url=''>
+        <image class='icon-laba' src='/pages/images/icon-laba.png'></image>
+        <view class='notice-list-fon'>
+          <view class='title mui-ellipsis-2'>新鲜出炉的“芯芯向荣”大赛获奖名单，看看有没 有你！</view>
+          <text>2018-11-28</text>
+        </view>
+      </navigator>
+      <navigator class='mui-table-view-cell' url=''>
+        <image class='icon-laba' src='/pages/images/icon-laba.png'></image>
+        <view class='notice-list-fon'>
+          <view class='title mui-ellipsis-2'>德力西电气亮相工博会，全新EasyPro解决方案惊 艳四座</view>
+          <text>2018-11-28</text>
+        </view>
+      </navigator>
+      <navigator class='mui-table-view-cell' url=''>
+        <image class='icon-laba' src='/pages/images/icon-laba.png'></image>
+        <view class='notice-list-fon'>
+          <view class='title mui-ellipsis-2'>芯芯向荣微信投票评选正在火热进行中，就差你啦！</view>
+          <text>2018-11-28</text>
+        </view>
+      </navigator>
+    </view>
+
+
+  </view>
+
+
+
+  <slideNav></slideNav>
+</view>

@@ -1,0 +1,105 @@
+<view class='tool'>
+  <view class='says-detail common-detail'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-12'>
+          <view class='col-xs-7'>
+            <navigator>
+              <button>
+                <image class='img-search' src='/pages/images/icon-search.png'></image>
+              </button>
+            </navigator>
+          </view>
+          <view class='col-xs-5 text-right'>
+            <navigator class='navigator-center'>
+              <image class='avt-big' src='/pages/images/avt-big.png'></image>
+            </navigator>
+            <navigator class='navi-go-to'>
+              <image class='icon-point' src='/pages/images/icon-point.png'></image>
+              <text>305</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='tool-banner'>
+    <image src='/pages/images/perCenter/tool-banner.png'></image>
+  </view>
+
+  <view class='tool-intro'>
+    <view class='container-fluid'>
+      <view class='title'>工具介绍</view>
+      <view class='pro-data'>
+        <text class='pro-title'>产品资料</text>
+        <text class='text-d'>Delixi-Electric 2018 Plan</text>
+        <text class='time'>2018.09.08</text>
+        <view class='pro-con'>电工作业前，首要的事项是先看懂电路图，只有熟悉了电 路图，才能知道下面的线路如何布置，才能完成后续的工 作。本课程由李金城老师主讲，带领大家掌握很强的识图 能力！</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='load-points'>
+    <view class='container-fluid'>
+      <view class='title'>下载所需积分：
+        <text>20积分</text>
+      </view>
+      <view class='load-con'>
+        <image src='/pages/images/perCenter/loan-img.png'></image>
+        <text>Delixi-Electric 2018 Plan</text>
+        <text class='time'>2018.02.15</text>
+      </view>
+    </view>
+  </view>
+
+
+  <slideNav></slideNav>
+
+  <view class='get-collect'>
+    <view class='col-xs-6'>
+      <navigator bindtap="submit">
+        <image class='img-get' src='/pages/images/icon-get.png'></image>
+        获取</navigator>
+    </view>
+    <view class='col-xs-6'>
+      <navigator>
+        <image class='img-sc' src='/pages/images/icon-fav-big.png'></image>
+        收藏</navigator>
+    </view>
+  </view>
+</view>
+
+<!-- 蒙城 -->
+<view class='layer' wx:if="{{showModal}}"></view>
+
+<!-- 获取成功弹窗 -->
+<view class='get-success-modal' wx:if="{{showModal}}">
+  <view class='success-title'>获取成功</view>
+  <image class='img-success' src='/pages/images/perCenter/icon-cg.png'></image>
+  <navigator class='btn-sure'  bindtap="go">确定</navigator>
+</view>
+
+
+<!-- 下载成功弹窗 -->
+<view class='get-success-modal' style='display:none'>
+  <view class='success-title'>下载成功</view>
+  <image class='img-success' src='/pages/images/perCenter/icon-cg.png'></image>
+  <navigator class='btn-sure'>确定</navigator>
+</view>
+
+<!-- 积分不足弹窗 -->
+<view class='get-success-modal' style='display:none'>
+  <view class='success-title'>您的积分不足</view>
+  <text class='Surplus'>剩余积分：<text>5积分</text></text>
+  <navigator class='btn-sure'>返回</navigator>
+</view>
+
+
+<!-- 获取工具弹窗 -->
+<view class='get-success-modal get-modal2' style='display:none;'>
+  <view class='success-title'>获取工具</view>
+  <text class='Surplus'>消耗积分：<text>20积分</text></text>
+  <navigator class='btn-sure'>确定</navigator>
+  <navigator class='btn-sure'>取消</navigator>
+</view>

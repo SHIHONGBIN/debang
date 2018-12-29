@@ -10,28 +10,38 @@
     <view class='Add-tags'>
       <view class='add-tag-title'>添加标签</view>
       <view class='add-line'>
-        <text class='selected'>电工技师</text>
-        <text>容电气工程师</text>
-        <text>采购</text>
+        <text bindtap='getCurIndex' data-id='{{index}}' class='{{biaoqianArrEq==index?"selected":""}}' wx:for='{{biaoqianArr}}'>{{item}}</text>
+        <!-- <text>容电气工程师</text>
+        <text>采购</text> -->
       </view>
     </view>
 
     <view class='Add-tags'>
       <view class='add-tag-title'>添加标题</view>
-      <textarea style='font-size:24rpx;color:#22292C;' bindblur="bindTextAreaBlur" auto-height placeholder="请添加标题" />
+      <textarea style='font-size:24rpx;color:#22292C;' bindblur="bindTextAreaBlur" bindinput='textareaInput' auto-height placeholder="请添加标题" data-type='title' maxlength='{{config.title.length}}'/>
       <view class='fill-con'>你还能
-        <text>20</text>输入</view>
+        <text>{{config.title.curLength}}</text>输入</view>
     </view>
 
     <view class='Add-tags'>
       <view class='add-tag-title'>添加段落</view>
-      <textarea style='font-size:24rpx;color:#22292C;' bindblur="bindTextAreaBlur" auto-height placeholder="请添加段落" />
+      <block wx:for='{{config.article}}'>
+      <view class='txtarea-box'>
+      <textarea style='font-size:24rpx;color:#22292C;' bindblur="bindTextAreaBlur" bindinput='textareaInput' auto-height placeholder="请添加段落" data-type='article' data-id='{{index}}' maxlength='{{item.length}}' />
       <view class='fill-con'>你还能
-        <text>120</text>输入</view>
+        <text>{{item.curLength}}</text>输入</view>
+      </view>
+          </block> 
     </view>
+ 
 
     <view class='Add-tags'>
       <view class='add-tag-title'>添加图片</view>
+      <view class='uploadimage-box'>
+      <block wx:for='{{config.image}}'>     
+        <image src='{{item}}'></image>
+      </block>
+      </view>
       <!-- 差相应的添加图片的小程序接口 -->
     </view>
 
@@ -40,11 +50,11 @@
 
 
 <view class='add-con'>
-  <view class='col-xs-6'>
+  <view class='col-xs-6' bindtap='addArticle'>
     <image class='icon-pic' src='/pages/images/icon-word.png'></image>
     <image class='icon-add' src='/pages/images/icon-add.png'></image>
     添加段落</view>
-  <view class='col-xs-6'>
+  <view class='col-xs-6' bindtap='uploadImage'>
     <image class='icon-pic' src='/pages/images/icon-pic.png'></image>
     <image class='icon-add' src='/pages/images/icon-add.png'></image>容添加图片</view>
 </view>

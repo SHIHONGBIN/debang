@@ -18,11 +18,13 @@
  <button disabled='true' class='comfirm-btn' bindtap='submitImage'>审核中</button>
  </block>
  <block wx:if='{{item.upload&&item.checking&&item.checked&&!item.srcIsUpload}}'>
- <button disabled='{{!item.srcIsUpload}}' class='{{!item.src?"submit-btn":"comfirm-btn"}}' bindtap='submitImage'>重新提交</button>
+ <button disabled='{{!item.uploadAgain}}' class='{{item.uploadAgain?"submit-btn":"comfirm-btn"}}' bindtap='submitImage' data-id='{{index}}'>重新提交</button>
  <text class='checked-failer-reslut'>未通过审核:图片不清晰</text>
  </block>
  <block wx:if='{{item.upload&&item.checking&&item.checked&&item.srcIsUpload}}'>
-已认证
+  <view class='upload-success-box'><text>已认证</text>
+  <image src='../images/icon-title.png'></image>
+</view>
  </block>
  <block wx:else></block>
 </block>

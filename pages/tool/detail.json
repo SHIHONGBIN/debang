@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "工具TOOLS",
+  "usingComponents": {
+    "slideNav": "../Componets/slideNav/slideNav"
+  }
+}

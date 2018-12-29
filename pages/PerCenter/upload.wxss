@@ -1,10 +1,10 @@
 /* pages/pCenter/upload.wxss */
 .upload-box{ display: flex; flex-direction: column; align-items: center; color:#22292C}
-.upload-box .uoload-image{width: 432rpx; height: 285rpx; display: flex; align-items: center;  flex-direction: column; background-color: #efefef; border: solid 1rpx #efefef}
+.upload-box .uoload-image{width: 432rpx; height: 285rpx; display: flex; align-items: center;  flex-direction: column; background-color: #efefef; border: solid 1rpx #efefef; margin-top: 56rpx;}
 .upload-box .uoload-image2{margin-top: 62rpx;}
 .upload-box .uoload-image .u-b-image-tips{ font-size: 24rpx; margin-top: 19rpx; color:#22292C}
 .upload-box .uoload-image image{width: 157rpx; height: 131rpx; align-self: center; margin-top: 58rpx;}
-.upload-box .title{ font-size: 32rpx;color:#22292C; margin-top: 70rpx; margin-bottom: 22rpx;}
+.upload-box .title{ font-size: 32rpx;color:#22292C; margin-top: 70rpx; margin-bottom: -34rpx;}
 .upload-box button{ font-size: 24rpx; width:175rpx; height: 50rpx; line-height: 50rpx;text-align: center; margin-top: 23rpx; border-radius: 8rpx; }
 .upload-box .comfirm-btn{ color:#fff!important; background-color:#7E837E!important;}
 .upload-box .u-b-tips{ font-size: 24rpx; margin-top: 58rpx;}
@@ -17,3 +17,6 @@
 .lightbox button.hideLightBox{ width: 209rpx; height: 61rpx; text-align: center; background-color: #D82D22; font-size: 30rpx; color:#fff; margin-top: 54rpx; line-height: 61rpx;}
 .comfirm-btn{ background-color: #7E837E!important; color:#fff!important}
 .checked-failer-reslut{ display: block; margin: 0; padding: 0; font-size: 20rpx; margin-top: 7rpx; color:#22292C}
+.upload-success-box{width: 288rpx;height:56rpx; margin-top: 23rpx;}
+.upload-success-box image{width: 100%;height:100%;}
+.upload-success-box text{ position: absolute; display: block; height: 56rpx; line-height: 50rpx; text-align: center; color:#fff; font-size: 20rpx;width:288rpx}

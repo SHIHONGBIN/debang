@@ -1,0 +1,62 @@
+<view class='per-set'>
+  <view class='per-set-user'>
+    <image class='per-set-img' src='/pages/images/perCenter/user-set.png'></image>
+  </view>
+  <view class='mui-table-view'>
+    <view class='mui-table-view-cell'>
+      <view class='col-xs-3'> 姓名：</view>
+      <view class='col-xs-9'>Fox72982</view>
+    </view>
+    <view class='mui-table-view-cell'>
+      <view class='col-xs-3'> 类型：</view>
+      <view class='col-xs-9'>盘厂电工</view>
+    </view>
+    <view class='mui-table-view-cell'>
+      <view class='col-xs-3'> 性别：</view>
+      <view class='col-xs-9'>
+        <text class="{{selected?'red':'default'}}" bindtap="selected">男<text class='male'></text></text>
+        <text class="{{selected1?'red':'default'}}" bindtap="selected1">女<text class='male'></text></text>
+      </view>
+    </view>
+    <view class='mui-table-view-cell'>
+      <view class='col-xs-3'>生日：</view>
+      <view class='col-xs-9'>1983年6月21日</view>
+    </view>
+    <view class='mui-table-view-cell'>
+      <view class='col-xs-3'>公司：</view>
+      <view class='col-xs-9'>上海市长宁区龙之梦大厦F1714</view>
+    </view>
+    <view class='mui-table-view-cell'>
+      <view class='col-xs-3'>所在地区：</view>
+      <view class='col-xs-9'>
+         <picker
+    mode="region"
+    bindchange="bindRegionChange"
+    value="{{region}}"
+    custom-item="{{customItem}}"
+  >
+    <view class="picker">
+      {{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+      </view>
+    </view>
+    <view class='mui-table-view-cell'>
+      <view class='col-xs-3'>详细地址：</view>
+      <view class='col-xs-9'>梅川一村4号楼307</view>
+    </view>
+    <view class='mui-table-view-cell'>
+      <navigator>
+        <view class='col-xs-3'>我的证件：</view>
+        <view class='col-xs-9'>
+          <text>（上传专业证书，可享受更多福利！）</text>
+        </view>
+        <image class='z-arrow' src='/pages/images/perCenter/z-arrow.png'></image>
+      </navigator>
+    </view>
+
+  </view>
+
+  <button class='confirm-on'>确认保存</button>
+
+</view>

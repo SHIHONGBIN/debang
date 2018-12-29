@@ -1,0 +1,149 @@
+<view class='pro-center my-forum'>
+  <view class='Ele-card'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-3'>
+          <navigator url=''>
+            <image class='img-search-white' src='/pages/images/perCenter/icon-search-white.png'></image>
+          </navigator>
+        </view>
+        <view class='col-xs-9 text-right'>
+          <navigator>
+            <image class='img-xx' src='/pages/images/icon-msg-1.png'></image>
+          </navigator>
+          <navigator>
+            <image class='img-setting' src='/pages/images/icon-setting.png'></image>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 第一层切换 -->
+  <view class='tabs'>
+    <view class='ul'>
+      <view class='col-xs-6'>
+        <navigator class="{{currentTab==0?'current':''}}" data-current="0" bindtap="clickTab">
+          <image class='img-wdtz' src='/pages/images/perCenter/icon-wdtz.png'></image>
+          <image class='img-wdtz1' src='/pages/images/perCenter/icon-msg-2.png'></image>
+          我的帖子
+        </navigator>
+      </view>
+      <view class='col-xs-6'>
+        <navigator class="{{currentTab==1?'current':''}}" data-current="1" bindtap="clickTab">
+          <image class='icon-fav' src='/pages/images/perCenter/icon-fav.png'></image>
+          <image class='icon-fav1' src='/pages/images/perCenter/icon-sc-white.png'></image>
+          我的收藏
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 我收藏 -->
+  <view class = "tab-content {{currentTab == 0 ? 'show':'hidden'}}">
+    <view class='mui-table-view'>
+      <view class='mui-table-view-cell'>
+        <view class='title mui-ellipsis-2'>例说识读PLC梯形图的方法与技巧</view>
+        <view class='title-con'>识读PLC梯形图和指令语句表的方法和步骤</view>
+        <text>2018.11.20</text>
+
+      </view>
+      <view class='mui-table-view-cell'>
+        <view class='title mui-ellipsis-2'>例说识读PLC梯形图的方法与技巧</view>
+        <view class='title-con'>客户是OEM客户还是系统集成商，不同的客户是OEM客</view>
+        <text>2018.11.20</text>
+      </view>
+      <view class='mui-table-view-cell'>
+        <view class='title mui-ellipsis-2'>电气设备安装调试过程中的安全注意事项</view>
+        <view class='title-con'>时刻记住安全第一，没有什么比安全更重要，安全主要是人身安全和设备安全</view>
+        <text>2018.11.20</text>
+      </view>
+      <view class='mui-table-view-cell'>
+        <view class='title mui-ellipsis-2'>电气设备安装调试过程中的安全注意事项</view>
+        <view class='title-con'>时刻记住安全第一，没有什么比安全更重要，安全主要是人身安全和设备安全</view>
+        <text>2018.11.20</text>
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- 我的帖子 -->
+  <view class='tab-content'>
+    <view class='tabs1'>
+      <view class='col-xs-6'>
+        <navigator class='current'>我的发表 </navigator>
+        <image src='/pages/images/perCenter/red-arrow.png'></image>
+      </view>
+      <view class='col-xs-6'>
+        <navigator>我的评论</navigator>
+        <image src='/pages/images/perCenter/red-arrow.png'></image>
+      </view>
+    </view>
+
+    <!-- 我的发表 -->
+    <view class = "tab-content1">
+      <view class='mui-table-view'>
+        <view class='mui-table-view-cell'>
+          <view class='title mui-ellipsis-2'>例说识读PLC梯形图的方法与技巧</view>
+          <view class='title-con'>识读PLC梯形图和指令语句表的方法和步骤</view>
+          <text>2018.11.20</text>
+        </view>
+        <view class='mui-table-view-cell'>
+          <view class='title mui-ellipsis-2'>例说识读PLC梯形图的方法与技巧</view>
+          <view class='title-con'>识读PLC梯形图和指令语句表的方法和步骤</view>
+          <text>2018.11.20</text>
+        </view>
+        <view class='mui-table-view-cell'>
+          <view class='title mui-ellipsis-2'>例说识读PLC梯形图的方法与技巧</view>
+          <view class='title-con'>识读PLC梯形图和指令语句表的方法和步骤</view>
+          <text>2018.11.20</text>
+        </view>
+      </view>
+    </view>
+    <!-- 我的发表 -->
+
+    <!-- 我的评论 -->
+    <view class='tab-content1'  style='display:none;'>
+      <view class='mui-table-view'>
+        <view class='mui-table-view-cell'>
+          <view class='col-xs-3'>
+            <image class='mui-user' src='/pages/images/perCenter/icon-user-nimi.png'></image>
+          </view>
+          <view class='col-xs-9'>
+            <text class='text-name'>fox72982</text>
+            <image class='img-fox' src='/pages/images/perCenter/dj-img-2.png'></image>
+
+            <text class='time'>2018.12.25</text>
+            <view class='title'>电气工程师工作怎样入行？</view>
+            <view class='title-con'>一般来说，发电机出来的电压等级以6kV居多，为了提高传输效率，需要进行升压，将电压等级</view>
+          </view>
+        </view>
+          <view class='mui-table-view-cell'>
+          <view class='col-xs-3'>
+            <image class='mui-user' src='/pages/images/perCenter/icon-user-nimi.png'></image>
+          </view>
+          <view class='col-xs-9'>
+            <text class='text-name'>fox72982</text>
+            <image class='img-fox' src='/pages/images/perCenter/dj-img-2.png'></image>
+
+            <text class='time'>2018.12.25</text>
+            <view class='title'>电气工程师工作怎样入行？</view>
+            <view class='title-con'>一般来说，发电机出来的电压等级以6kV居多，为了提高传输效率，需要进行升压，将电压等级</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+
+
+
+
+
+
+  <bottomNav></bottomNav>
+  <slideNav></slideNav>
+</view>

@@ -1,1 +1,5 @@
 /* pages/WriteArticle/index.wxss */
+.txtarea-box{  position: relative}
+.txtarea-box .fill-con{ bottom: 5rpx}
+.uploadimage-box{ display: flex; flex-direction: row; flex-wrap: wrap; margin-top: 25rpx;}
+.uploadimage-box image{ width: 140rpx; height: 140rpx; margin:10rpx; border: solid 1rpx #e0e0e0}

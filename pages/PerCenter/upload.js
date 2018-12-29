@@ -24,8 +24,11 @@ Page({
       //审核后
       checked: false,
       //通过
-      srcIsUpload: false
-    }, {
+      srcIsUpload: false,
+      //重新上传
+      uploadAgain: false
+    }, 
+    {
       //审核中
       id: 1,
       initsrc: '../images/uploadbg.png',
@@ -38,36 +41,45 @@ Page({
       //审核后
       checked: false,
       //还未通过
-      srcIsUpload: false
-    }, {
-      //审核失败
-      id: 2,
-      initsrc: '../images/uploadbg.png',
-      name: '上传工程师证',
-      src: '../images/img-zx.png',
-      //提交
-      upload: true,
-      //审核中
-        checking: true,
-      //审核后
-      checked: true,
-      //还未通过
-      srcIsUpload: false
-    }, {
-      //审核通过
-      id: 3,
-      initsrc: '../images/uploadbg.png',
-      name: '上传工程师证',
-      src: '../images/img-zx.png',
-        //提交
-        upload: true,
-      //审核中
-        checking: true,
-      //审核后
-        checked: true,
-      //通过
-      srcIsUpload: true
-    }]
+      srcIsUpload: false,
+        //重新上传
+        uploadAgain: false
+    }, 
+    // {
+    //   //审核失败
+    //   id: 2,
+    //   initsrc: '../images/uploadbg.png',
+    //   name: '上传工程师证',
+    //   src: '../images/img-zx.png',
+    //   //提交
+    //   upload: true,
+    //   //审核中
+    //   checking: true,
+    //   //审核后
+    //   checked: true,
+    //   //还未通过
+    //   srcIsUpload: false,
+    //   //重新上传
+    //   uploadAgain:false
+    // }
+    // , {
+    //   //审核通过
+    //   id: 3,
+    //   initsrc: '../images/uploadbg.png',
+    //   name: '上传工程师证',
+    //   src: '../images/img-zx.png',
+    //     //提交
+    //     upload: true,
+    //   //审核中
+    //     checking: true,
+    //   //审核后
+    //     checked: true,
+    //   //通过
+    //   srcIsUpload: true,
+    //     //重新上传
+    //     uploadAgain: false
+    // }
+    ]
 
   },
 
@@ -129,7 +141,7 @@ Page({
   chooseImage: function(e) {
     var index = e.currentTarget.dataset.id;
     var config = this.data.config;
-    //未提交或者重新提交才会调用上传功能
+    //未提交或者重新提交才会调用上传功能  序号0 1 要连续
     if (config[index].src === '' || config[index].checked == true && config[index].srcIsUpload==false) {
     var that = this;
     wx.chooseImage({
@@ -141,7 +153,14 @@ Page({
         const tempFilePaths = res.tempFilePaths;
         const id = e.currentTarget.dataset.id;
         var config = that.data.config;
-        config[id].src = tempFilePaths[0];
+        //未上传
+        if (config[id].src == ''){
+          config[id].src = tempFilePaths[0];
+        }else{
+          //审核失败重新上传 状态回滚审核中
+          config[id].uploadAgain = true;
+        }
+        
         that.setData({
           config: config
         })
@@ -167,7 +186,12 @@ Page({
     //如果是点击了确定按钮
     if (e.currentTarget.dataset.type == 'button') {
       config[configId].upload = true;
-      config[configId].checking = true
+      config[configId].checking = true,
+      // if(){
+        config[configId].checked = false;
+      // }
+      console.log(configId)
+
       this.setData({
         config: config
       })

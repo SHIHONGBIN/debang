@@ -1,0 +1,96 @@
+<view class='pro-center my-forum my-tool'>
+  <view class='Ele-card'>
+    <view class='search'>
+      <view class='container-fluid'>
+        <view class='col-xs-3'>
+          <navigator url=''>
+            <image class='img-search-white' src='/pages/images/perCenter/icon-search-white.png'></image>
+          </navigator>
+
+        </view>
+        <view class='col-xs-9 text-right'>
+          <navigator>
+            <image class='img-xx' src='/pages/images/icon-msg-1.png'></image>
+          </navigator>
+          <navigator>
+            <image class='img-setting' src='/pages/images/icon-setting.png'></image>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='tabs'>
+    <view class='ul'>
+      <view class='col-xs-6 '>
+        <navigator  class="{{currentTab==0?'current':''}}" data-current="0" bindtap="clickTab">
+          <image class='icon-tool' src='/pages/images/icon-tool.png'></image>
+          <image class='icon-tool1' src='/pages/images/perCenter/icon-tool-current.png'></image>
+          我的工具
+        </navigator>
+      </view>
+      <view class='col-xs-6'>
+        <navigator  class="{{currentTab==1?'current':''}}" data-current="1" bindtap="clickTab">
+          <image class='icon-fav' src='/pages/images/perCenter/icon-fav.png'></image>
+          <image class='icon-fav1' src='/pages/images/perCenter/icon-sc-white.png'></image>
+          我的收藏
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+<!-- 我的工具 -->
+  <view class = "tab-content {{currentTab == 0 ? 'show':'hidden'}}">
+    <view class='col-xs-6'>
+      <navigator>
+        <image class='img-model' src='/pages/images/perCenter/loan-img.png'></image>
+        <text class='con-model'>Delixi-Electric 2018 Plan-工具</text>
+        <text class='text-time'>2018.02.15</text>
+      </navigator>
+    </view>
+    <view class='col-xs-6'>
+      <navigator>
+  
+        <image class='img-model' src='/pages/images/perCenter/loan-img.png'></image>
+        <text class='con-model'>Delixi-Electric 2018 Plan</text>
+        <text class='text-time'>2018.02.15</text>
+      </navigator>
+    </view>
+  </view>
+
+
+<!-- 我的收藏 -->
+  <view class = "tab-content {{currentTab == 1 ? 'show':'hidden'}}">
+    <view class='col-xs-6'>
+      <navigator>
+    
+        <image class='img-model' src='/pages/images/perCenter/loan-img.png'></image>
+        <text class='con-model'>Delixi-Electric 2018 Plan-收藏</text>
+        <text class='text-time'>2018.02.15</text>
+      </navigator>
+    </view>
+    <view class='col-xs-6'>
+      <navigator>
+  
+        <image class='img-model' src='/pages/images/perCenter/loan-img.png'></image>
+        <text class='con-model'>Delixi-Electric 2018 Plan</text>
+        <text class='text-time'>2018.02.15</text>
+      </navigator>
+    </view>
+  </view>
+
+
+ 
+
+
+
+
+
+
+
+
+
+  <bottomNav></bottomNav>
+  <slideNav></slideNav>
+</view>

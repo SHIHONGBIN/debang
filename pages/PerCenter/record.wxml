@@ -1,0 +1,70 @@
+<view class='Integral-record'>
+  <view class='container-fluid'>
+    <view class='mui-table-view'>
+      <view class='mui-table-view-cell'>
+        <view class='col-xs-7'>
+          <view class='check-in'>签到积分</view>
+          <view class='time-collect'>领取时间：2018-11-28 17:19:18</view>
+        </view>
+        <view class='col-xs-5'>
+          <text>+20</text>积分
+        </view>
+      </view>
+      <view class='mui-table-view-cell'>
+        <view class='col-xs-7'>
+          <view class='check-in'>签到积分</view>
+          <view class='time-collect'>领取时间：2018-11-28 17:19:18</view>
+        </view>
+        <view class='col-xs-5'>
+          <text>+20</text>积分
+        </view>
+      </view>
+      <view class='mui-table-view-cell'>
+        <view class='col-xs-7'>
+          <view class='check-in'>签到积分</view>
+          <view class='time-collect'>领取时间：2018-11-28 17:19:18</view>
+        </view>
+        <view class='col-xs-5'>
+          <text>+20</text>积分
+        </view>
+      </view>
+       <view class='mui-table-view-cell'>
+        <view class='col-xs-7'>
+          <view class='check-in'>签到积分</view>
+          <view class='time-collect'>领取时间：2018-11-28 17:19:18</view>
+        </view>
+        <view class='col-xs-5'>
+          <text>+20</text>积分
+        </view>
+      </view>
+       <view class='mui-table-view-cell'>
+        <view class='col-xs-7'>
+          <view class='check-in'>签到积分</view>
+          <view class='time-collect'>领取时间：2018-11-28 17:19:18</view>
+        </view>
+        <view class='col-xs-5'>
+          <text>+20</text>积分
+        </view>
+      </view>
+       <view class='mui-table-view-cell'>
+        <view class='col-xs-7'>
+          <view class='check-in'>签到积分</view>
+          <view class='time-collect'>领取时间：2018-11-28 17:19:18</view>
+        </view>
+        <view class='col-xs-5'>
+          <text>+20</text>积分
+        </view>
+      </view>
+       <view class='mui-table-view-cell'>
+        <view class='col-xs-7'>
+          <view class='check-in'>签到积分</view>
+          <view class='time-collect'>领取时间：2018-11-28 17:19:18</view>
+        </view>
+        <view class='col-xs-5'>
+          <text>+20</text>积分
+        </view>
+      </view>
+    </view>
+  </view>
+  <slideNav></slideNav>
+</view>

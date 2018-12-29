@@ -5,6 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
+    //标签
+    biaoqianArr:['电工技师','容电器工程师','采购'],
+    //指针
+    biaoqianArrEq:'',
+    config:{
+      biaoqian:'',
+      title:{
+        length:20,
+        curLength: 20,
+        content:''
+      },
+      article:[{
+          length:120,
+        curLength: 120,
+          content:''
+      }],
+      image:[]
+    },
     height: 60,
     focus: false
   },
@@ -66,5 +84,76 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  //字数控制
+  textareaInput:function(e){
+    var text = e.detail.value;
+    var type = e.currentTarget.dataset.type;
+    var id = e.currentTarget.dataset.id;
+    var config = this.data.config;
+    //判断是标题
+    if(type == 'title'){
+      config.title.curLength -= 1;
+      if (config.title.curLength >= config.title.length){
+        config.title.content = text.slice(0, config.title.length)
+      }else{
+        config.title.content = text
+      }
+    } 
+    //如果是文章 赋值
+    if(type == 'article'){
+      config.article[id].curLength -= 1;
+      if (config.article[id].curLength >= config.article[id].length) {
+        config.article[id].content = text.slice(0, config.article[id].length)
+      } else {
+        config.article[id].content = text
+      }
+    }
+    this.setData({
+      config:config
+    })
+  },
+  //添加段落
+  addArticle:function(){
+    var obj = {
+      length: 120,
+      curLength: 120,
+      content: ''
+    };
+    var config = this.data.config;
+    config.article.push(obj);
+    this.setData({
+      config:config
+    })
+  },
+  //添加图片
+  uploadImage: function () {
+    var that = this;
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        const tempFilePaths = res.tempFilePaths;
+        var config = that.data.config;
+        tempFilePaths.map(function(item,index){
+          config.image.push(item)
+        })
+        that.setData({
+          config:config
+        })
+      }
+    })},
+    //添加标签
+  getCurIndex:function(e){
+    var cur = e.currentTarget.dataset.id;
+    var config = this.data.config;
+    config['biaoqian'] = this.data.biaoqianArr[cur];
+    this.setData({
+      biaoqianArrEq: cur,
+      config:config
+    });
+
   }
 })
